@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <form> 
+            <fieldset>
+                    <legend>Enter Your Personal Datails:</legend>
+                    <div>
+                        <label for="Name">Name: </label> &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <input type="text" id="Name" name="Name" placeholder="Enter your name">
+                    </div>
+                    <br>
+                        <div>
+                            <label for="Father name">Father name: </label> 
+                            <input type="text" name="Father name" id="Father name" placeholder="Enter your Father name">
+                        </div>
+                    <br>
+                        <div>
+                            <label for="check">Check Over 18 Eligiblity: </label> 
+                            <input type="checkbox" name="my eligiblity" id="check">
+                        </div>
+                    <br>
+                        <div>
+                            <label for="age">Your age: </label> &nbsp; &nbsp;
+                            <input type="number" name="age" id="age" placeholder="Enter your age">
+                        </div>
+                    <br>
+                        <div>
+                            <label>You passed the Matic class: </label> &nbsp; 
+                            <label for="yess">yess</label>
+                            <input type="checkbox" name="yess" id="yess">
+                            <label for="No">No</label>
+                            <input type="checkbox" name="No" id="No">
+                        </div>
+                    <br>
+                        <div>
+                            <label for="email">Your email address: </label> &nbsp; 
+                            <input type="email" name="email" id="email" placeholder="Your email address">
+                        </div>
+                    <br>
+                        <div>
+                            <label for="birthday">Your Birthday: </label> &nbsp; 
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                    <br>    
+                    <div>
+                        <label>Gender Type: </label> &nbsp; &nbsp; 
+                        <label for="male">Male</label> 
+                        <input type="radio" name="my gender" id="male">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="my gender" id="Female">
+                        <label for="other">Other</label> 
+                        <input type="radio" name="my gender" id="other">
+                    </div>
+                    <br>
+                        <div>
+                            <h3>
+                                <p><label>Write About Your Self</label></p>
+                            </h3> 
+                                <textarea rows="5" cols="60"></textarea>
+                        </div>
+                    <br>
+                    <div>
+                        <!-- car name start-->
+                        <label for="cars">Your favourite car: </label> &nbsp; &nbsp;
+                            <select id="cars" name="cars">
+                                <option selected>Grandy</option>
+                                <option>Swift</option>
+                                <option>Merhan</option>
+                                <option>Audi</option>
+                                <option>Mustang</option>
+                                <option>Corolla</option>
+                                <option>RAV4</option>
+                                <option>Toyata</option>
+                            </select>
+                        <!-- car name end -->
+                        <br><br>
+                        <!-- Country start  -->
+                        <label for="Country">Country name: </label> &nbsp; &nbsp;
+                            <select id="Country" name="Country">
+                                <optgroup label="Pakistan">
+                                    <option>Mirpurkhas</option>
+                                    <option>Karachi</option>
+                                    <option>Islamabad</option>
+                                </optgroup>
+                                <optgroup label="Turkey">
+                                    <option>Istanbul</option>
+                                    <option>Ankara</option>
+                                    <option>Izmir</option>
+                                </optgroup>
+                            </select>
+                        <!-- Country end -->
+                        <br><br>  
+                        <!-- Car name start -->                  
+                        <label for="cars">Car: </label> &nbsp; &nbsp; &nbsp;
+                            <select id="cars" name="cars" size="4">
+                                <option selected>Grandy</option>
+                                <option>Swift</option>
+                                <option>Merhan</option>
+                                <option>Toyata</option>
+                                <option>Audi</option>
+                                <option>Mustang</option>
+                                <option>Merhan</option>
+                                <option>Swift</option>
+                            </select>
+                        <!-- Car name end --> 
+                        <br><br>
+                        <!-- Car name start -->
+                        <label for="cars">Choose a car: </label>
+                            <select id="cars" name="cars" size="4" multiple>
+                                <option value="Swift">Swift</option>
+                                <option value="Merhan">Merhan</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <p>Hold the {Ctrl (windows)} button to select multiple options.</p>
+                        <!-- Car name end -->
+                        <!-- car list start -->
+                        <label>Car: </label>
+                            <input list="Car">
+                                <datalist id="Car">
+                                    <option value="Grandy">Grandy</option>
+                                    <option value="Swift">Swift</option>
+                                    <option value="Merhan">Merhan</option>
+                                    <option value="Corolla">Corolla</option>
+                                    <option value="RAV4">RAV4</option>
+                                    <option value="Mustang">Mustang</option>
+                                </datalist>
+                            <br><br>
+                        <!-- car list end -->
+                    </div>
+                    <div>
+                        <label>Upload your image: </label> &nbsp; 
+                        <input type="file" accept="image/*">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="submit now">
+                        <input type="reset" value="reset now">
+                    </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+                    
