@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <table border ="1">
+            <form name="f1">
+            <tr>
+                <td><b>Name</b></td>
+                <td><input type="text" name="n1" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            <tr>
+                <td><b>Father name</b></td>
+                <td><input type="text" name="n2" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            <tr>
+                <td><b>Age</b></td>
+                <td><input type="text" name="n3" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            <tr>
+                <td><b>City</b></td>
+                <td><input type="text" name="n4" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            </tr>
+                <td><b>Password</b></td>
+                <td><input type="password" name="n5" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            <tr>
+            </tr>
+                <td><b>eMail</b></td>
+                <td><input type="text" name="e1" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;"></td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td>
+                <td><input type="radio" name="g" value="b1" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Male
+                <input type="radio" name="g" value="b2" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Female
+                <input type="radio" name="g" value="b3" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Other</td>
+            </tr>
+            <tr>
+                <td><b>Subject</b></td>
+                <td><input type="checkbox" name="n9" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Mathematics
+                <input type="checkbox" name="n9" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Physics
+                <input type="checkbox" name="n9" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Chemistry
+                <input type="checkbox" name="n9" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">English
+                <input type="checkbox" name="n9" size="50" style="background-color:pink; color:red; text-align:center; font-family:Cooper Std;">Urdu</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b><center><h1>Message</center></h1></b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea cols="80" rows="12">
+                type here message........!
+                </textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="file" name="b1" value="browse">
+                <input type="submit" name="b2" value="send" onMouseOver="if(document.f1.n1.value.length<1)window.alert('eMail is empty')">
+                <input type="reset" name="b3" value="clear"></td>
+            </tr>
+        </table>
+    </body>
+</html>
