@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Form</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        width: 380px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .row {
+        display: flex;
+        gap: 10px;
+      }
+
+      input, select {
+        width: 94%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+      }
+
+      input:focus, select:focus {
+        border-color: #007bff;
+      }
+
+      .label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .gender-box {
+      align-items: center;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+      }
+
+      .gender-option {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .gender-option input {
+        accent-color: #007bff;
+        cursor: pointer;
+      }
+
+      .country{
+          width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+
+  <form id="form">
+    <h2>Register Form</h2>
+
+    <div class="row">
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+    </div>
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <label class="label">Gender</label>
+
+    <div class="gender-box">
+      <label class="gender-option">
+        <input type="radio" name="gender" value="Male">
+        <span>Male</span>
+      </label>
+
+      <label class="gender-option">
+        <input type="radio" name="gender" value="Female">
+        <span>Female</span>
+      </label>
+
+      <label class="gender-option">
+        <input type="radio" name="gender" value="Other">
+        <span>Other</span>
+      </label>
+    </div>
+
+    <select class="country">
+      <option value="">Select Country</option>
+      <option>Pakistan</option>
+      <option>India</option>
+      <option>USA</option>
+    </select>
+
+    <button type="submit">Create Account</button>
+  </form>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      let firstName = document.getElementById("firstName").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      if(firstName === "" || email === "" || password === ""){
+        alert("Please fill all required fields");
+      } else {
+        alert("Account Created Successfully 🚀");
+      }
+    });
+  </script>
+
+  </body>
+</html>
