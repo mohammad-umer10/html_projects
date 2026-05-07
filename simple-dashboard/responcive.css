@@ -1,4 +1,9 @@
 @media screen and (max-width: 520px) and (min-width: 319px){
+
+    .menu-btn{
+        display: block;
+        padding-left: 10px;
+    }
     .head-item-1,
     .head-item-2,
     .head-item-3,
@@ -9,6 +14,7 @@
         width: 100px;
         padding: 10px;
     }
+
     .content.expand{
         margin-left: 0px;
     }
